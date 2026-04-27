@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rx – Nicole R. Foronda, MD</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="toolbar">
+      <button class="btn-clear" onclick="clearAll()">🗑 I-clear</button>
+      <button class="btn-print" onclick="window.print()">🖨 I-print</button>
+    </div>
+
+    <div id="rx">
+      <div class="hdr-name">NICOLE R. FORONDA, MD, DPBOHNS, DPAAAMMI</div>
+      <div class="hdr-spec">
+        DISEASES OF THE EAR, NOSE AND THROAT &bull; HEAD AND NECK SURGERY<br />
+        MAXILLOFACIAL TRAUMA &bull; FACIAL PLASTIC SURGERY<br />
+        AESTHETIC AND AGE MANAGEMENT MEDICINE
+      </div>
+
+      <div class="clinics-wrap">
+        <div class="clinics">
+          <div class="col">
+            <b>CLINICA FORONDA</b>
+            Parish Pastoral Center, E. Baligod Street,<br />
+            District III, Cauayan, Isabela<br />
+            Monday, Tuesday 10:30AM-4:00PM<br />
+            Wednesday, Thursday, Friday 1:30PM-4:00PM<br />
+            09616215299<br /><br />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="8"
+              viewBox="0 0 24 24"
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 2px;
+              "
+            >
+              <rect width="24" height="24" rx="4" fill="#1877F2" />
+              <path
+                d="M16 8h-2.5C13 8 13 8.5 13 9v2h3l-.5 3H13v7h-3v-7H8v-3h2V8.5C10 6.5 11.5 5 13.5 5H16v3z"
+                fill="white"
+              /></svg
+            >Clinica Foronda ENT &amp; Pulmo Clinic Cauayan
+          </div>
+          <div class="col">
+            <b>Dr. Ester R. Garcia Medical Center</b>
+            OPD Room 5<br />
+            Gov. F.N. Dy, San Fermin, Cauayan, Isabela<br />
+            Thursday 10:00AM-12:00NN<br />
+            09065405639<br />
+            <br />
+            <b>Martin's EENT &amp; Dental Clinic</b>
+            Roxas St., Cauayan, Isabela<br />
+            Saturday 9:00AM-12:00NN
+          </div>
+          <div class="col">
+            <b>Cauayan Medical Specialists Hospital</b>
+            Room 1010<br />
+            G/F, Burgos St., Cauayan, Isabela<br />
+            Wednesday &amp; Friday 10:00AM-12:00NN<br />
+            09266023130<br />
+            <br />
+            <b>Other Hospital Affiliations:</b><br />
+            Isabela United Doctors Medical Center<br />
+            Providers MPC Medical Center
+          </div>
+        </div>
+        <div class="rule-thick"></div>
+        <div class="rule-thin"></div>
+      </div>
+
+      <div class="date-row">
+        <b>Date:</b>
+        <span style="position: relative; display: inline-block">
+          <input
+            type="date"
+            id="rx-date"
+            style="
+              border: none;
+              border-bottom: 1px solid #000;
+              outline: none;
+              font-size: 10.5px;
+              width: 120px;
+              font-family: Arial, sans-serif;
+              background: transparent;
+            "
+          />
+        </span>
+      </div>
+
+      <div class="pt-row1">
+        <div class="pt-name-wrap">
+          <span class="lbl">Patient's Name:</span>
+          <input type="text" id="pt-name" />
+        </div>
+        <div class="pt-age-wrap">
+          <span class="lbl">Age:</span>
+          <input type="text" id="pt-age" />
+        </div>
+        <div class="pt-sex-wrap">
+          <span class="lbl">Sex:</span>
+          <select
+            id="pt-sex"
+            style="
+              border: none;
+              border-bottom: 1px solid #000;
+              outline: none;
+              font-size: 10.5px;
+              font-family: Arial, sans-serif;
+              background: transparent;
+              width: 70px;
+              padding-bottom: 2px;
+              -webkit-appearance: auto;
+              appearance: auto;
+            "
+          >
+            <option value=""></option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="pt-row2">
+        <span class="lbl">Address:</span>
+        <input type="text" id="pt-address" />
+      </div>
+
+      <!-- Rx -->
+      <div class="rx-sym">R<sub>x</sub></div>
+
+      <!-- WRITE AREA -->
+      <div class="rx-area">
+        <div class="ruled-lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <textarea id="rx-content" spellcheck="false"></textarea>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="followup">
+          <b>Follow-up:</b>
+          <input type="text" id="followup" />
+        </div>
+        <div class="sig">
+          <b>NICOLE R. FORONDA, MD</b>
+          License No.: 0131446<br />
+          PTR No.:
+          <input
+            type="text"
+            id="ptr-no"
+            style="
+              border: none;
+              border-bottom: 1px solid #000;
+              outline: none;
+              font-size: 7.5px;
+              width: 80px;
+              font-family: Arial, sans-serif;
+              background: transparent;
+            "
+          />
+        </div>
+      </div>
+    </div>
+    <!-- #rx -->
+
+    <script src="../js/reseta.js"></script>
+  </body>
+</html>
